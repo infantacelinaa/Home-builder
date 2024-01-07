@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+     .bg-image{
+        background-image: url(https://i.pinimg.com/originals/c8/d1/d3/c8d1d372d5c3590defdc0c35af598641.jpg);
+        background-position:absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+     }
+     .one{
+        border:10px solid rgb(0, 0, 0);
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(27, 2, 12, 0.58); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* z-index: 2; */
+        width: 40%;
+        padding: 20px;
+        text-align: center;
+  
+     }
+    </style>
+
+</head>
+<body>
+    <div class="bg-image">
+        <img src="https://i.pinimg.com/originals/c8/d1/d3/c8d1d372d5c3590defdc0c35af598641.jpg" alt="home in login">
+    </div>
+    <div class="one">
+       <form>
+        <center><label style="font-size: 25px;font-style:italic;">Register</label></center>
+        <table>
+            <tr>
+                <td><label for="user">Username </label></td>
+                <td>:<input type="text" name="user" id="user" placeholder="Enter Name"></td>
+                <br>
+            </tr>
+            <tr>
+                <td><label for="mail">E-mail </label></td>
+                <td>:<input type="email" id="mail" placeholder="Enter valid e-mail"></td>
+            </tr>
+            <tr>
+               <td><label for="pass">Password</label></td>
+               <td>:<input type="password" id="pass"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter a valid password"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile number</label></td>
+                <td>:<input type="tel" id="mobile" placeholder="+91"></td>
+            </tr>
+            <tr>
+                <td><label for="add">Address</label></td>
+                <td>:<input type="address" id=add placeholder="Enter Address"></td>
+            </tr>
+            <tr>
+                <td><label for=gender>Gender</label></td>
+                <td>:<input type="radio" name="gender" id="gender">
+                <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+    <input type="radio" name="gender"><label>Others</label></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+        
+       </form>
+    </div>
+</body>
+</html>
